@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds">
+    <jmxConfigurator/>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} [%thread]-[%c]-[%p]-[%L] %m%n</Pattern>
+        </layout>
+    </appender>
+
+    <logger name="org.apache">
+        <level value="ERROR"/>
+    </logger>
+
+    <logger name="net.sf">
+        <level value="ERROR"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="stdout"/>
+        <!--<appender-ref ref="R"/>-->
+    </root>
+</configuration>
