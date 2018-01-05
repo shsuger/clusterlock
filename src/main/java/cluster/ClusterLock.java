@@ -2,12 +2,7 @@ package cluster;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * 分布式锁
- * 
- * @author bernie.xu
- * @Date: 2015年12月24日 下午1:55:37
- */
+
 public interface ClusterLock {
 
 	public Locker transiantLock(String lockPath) throws Exception;

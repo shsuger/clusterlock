@@ -10,12 +10,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-/**
- * <pre>
- * 集群锁实现
- * @author bernie.xu
- * @Date: 2015年12月24日 下午2:59:32
- */
+
 public class ClusterLockImpl implements ClusterLock {
 
 	// 默认根目录
